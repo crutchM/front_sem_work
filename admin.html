@@ -40,15 +40,44 @@
 </header>
 
 <section >
-  <div>Добавить новость</div>
-  <div>Введите текст новости, а также приложите изображение (размер: 270х270px)</div>
+  <div style="margin-left: 135px; margin-top: 174px;font-weight: 600;font-size: 38px;">Добавить новость</div>
+  <div style="margin-left: 135px; margin-top: 18px;font-size: 16px;font-family: 'Proxima Nova Rg';">Введите текст новости, а также приложите изображение (размер: 270х270px)</div>
   <form name="" method="post" action="" style="display: block">
-    <textarea name="comment" cols="40" rows="3" placeholder="Введите текст новости"></textarea>
-    <input type="file" name="photo" multiple accept="image/*,image/jpeg" placeholder="Добавить изображение" size="" required>
-    <a class="button-delivery" href="#">Применить</a>
+    <div style="margin-top:74px;margin-left: 135px; border-radius: 10px; border: 2px solid #23415E; width: 770px"><textarea style="margin:10px;outline: none; border-color: transparent; resize: none; width: 750px"name="comment" cols="40" rows="3" placeholder="Введите текст новости"></textarea></div>
+    <div style="margin-top: 30px;margin-left: 135px">
+      <input type="file" name="photo" id="input__file" class="input input__file" multiple accept="image/*,image/jpeg" placeholder="Добавить изображение" size="" required/>
+      <label for="input__file">
+        <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/add_news.png" alt="Выбрать файл" width="25">+ Добавить Изображение</span>
+      </label>
+    </div>
+    <div style="margin-top: 114px"><a class="button-delivery" href="#" >Применить</a></div>
  </form>
 </section>
+<style>
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 
+}
+
+.input__file-icon{
+  margin-right: 15px;
+}
+
+.input__file-icon-wrapper {
+  cursor: pointer;
+  font-size: 16px;
+  color: #2A496B;
+  font-family: 'Proxima Nova Lt';
+  font-weight: 600;
+  justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #fff;
+}
+</style>
 <footer>
   <div class ="cards" style="align-items: flex-start;">
 
